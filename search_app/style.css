@@ -1,0 +1,70 @@
+html, body, .grid-container {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 0px;
+    background-color: hsla(0,0%,97%,1.00);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    background-color: hsla(0,0%,100%,1.00);
+    color: hsla(218,94%,21%,1.00);
+    font-weight: normal;
+    padding-top: 0px;
+}
+.header {
+    grid-area: header;
+    background-color: #032869;
+    color: #FFFFFF;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+}
+.header a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.main {
+    grid-area: main;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-image: url(images/shoe.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 203% 0%;
+}
+.main2 {
+    grid-area: main;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 203% 0%;
+}
+.main3 {
+    grid-area: main;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 203% 0%;
+}
+.footer {
+  grid-area: footer;
+  background-color: #032869;
+  color: #FFFFFF;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+}
