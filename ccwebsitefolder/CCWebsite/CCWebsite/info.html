@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Information</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+html, body, .grid-container {
+    height: 100%;
+    margin: 0;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr 4fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header header" "hero hero hero" "left center right" "footer footer footer";
+}
+.header {
+    grid-area: header;
+    background-color: #024959;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.hero {
+    grid-area: hero;
+    background-image: url(images/infoImage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.footer {
+    grid-area: footer;
+    background-color: #024959;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.left {
+    grid-area: left;
+    padding: 5%;
+}
+.center {
+    grid-area: center;
+    padding: 5%;
+}
+.right {
+    grid-area: right;
+    padding: 5%;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="header">
+    <nav> <a href="index.html">HOME </a>|<a href="whatweoffer.html"> WHAT WE OFFER </a>|<a href="info.html"> INFO </a>|<a href="aboutus.html"> ABOUT </a>|<a href="contactus.html"> CONTACT</a> </nav>
+  </div>
+  <div class="hero">
+    <div class="logo"></div>
+  </div>
+  <div class="left">
+   <h2> <img src="images/printerIcon.png" width="50" height="50" alt=""/> DAY PASS </h2>
+  Are you in a pinch? Or do you find yourself only needing a space to work for a short period of time? This is a great option for those looking for a space to have meetings with a team or any clients from time to time. Use the Day Pass option to get one full day to use!</div>
+  <div class="center">
+    <h2> <img src="images/gearsIcon.png" width="50" height="50" alt=""/> COWORKING </h2>
+ Coworking is great for those who don’t have a need for a private office specifically. However, with this choice, members still have access to the coworking space and offered amenities! During this difficult, we all also ensured that all desks are adequately spaced to ensure safe social distancing for COVID-19. This membership is offered yearly, monthly, and daily!</div>
+  <div class="right">
+    <h2> <img src="images/computerIcon.png" width="50" height="50" alt=""/> A DESK FOR YOU </h2>
+  This option is our most in depth option. Choosing this allows you to have access to the most features of our coworking space! This is choice is a step above our Coworking option. This option is offered on a monthly basis. This membership allows you to have your own desk in a space that is only shared with up to four other coworkers!</div>
+  <div class="footer">
+    <section><img src="images/ccfull.png" width="75" alt=""/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHELBY SMITH | MY COWORKING SITE | Copyright &copy;2020</section>
+  </div>
+</div>
+</body>
+</html>

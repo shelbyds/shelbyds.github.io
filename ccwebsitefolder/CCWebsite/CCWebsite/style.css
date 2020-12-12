@@ -1,0 +1,65 @@
+  * {
+    box-sizing: border-box;
+  }
+  html, body, .grid-container {
+    height: 100%;
+    margin: 0;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr 4fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header"
+      "hero hero hero"
+      "left center right"
+      "footer footer footer";
+  }
+  .header {
+    grid-area: header;
+    background-color: #024959;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+  .header a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .hero {
+    grid-area: hero;
+    background-image: url(images/office1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: #024959;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+  .left {
+    grid-area: left;
+    padding-left: 20%;
+  }
+  .center {
+    grid-area: center;
+    padding-left: 20%;
+  }
+  .right {
+    grid-area: right;
+    padding-left: 20%;
+  }

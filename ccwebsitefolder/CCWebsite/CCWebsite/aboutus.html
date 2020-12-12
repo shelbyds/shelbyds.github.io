@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>About Us</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+html, body, .grid-container {
+    height: 100%;
+    margin: 0;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr 4fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header header" "hero hero hero" "center center center" "footer footer footer";
+}
+.header {
+    grid-area: header;
+    background-color: #024959;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.hero {
+    grid-area: hero;
+    background-image: url(images/aboutImage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.footer {
+    grid-area: footer;
+    background-color: #024959;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.center {
+    grid-area: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+	width: 100%;
+	max-width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="header">
+    <nav> <a href="index.html">HOME </a>|<a href="whatweoffer.html"> WHAT WE OFFER </a>|<a href="info.html"> INFO </a>|<a href="aboutus.html"> ABOUT </a>|<a href="contactus.html"> CONTACT</a> </nav>
+  </div>
+  <div class="hero">
+    <div class="logo"></div>
+  </div>
+  <div class="center">
+    <article>
+    <h2> ABOUT US</h2>
+    <p>Companion Cowork is a company that offers private temporary offices as well as rooms for clients who need a place to work thats away from home. Here at Companion Cowork, we have a modern and relaxed atmosphere that has dedicated offices that are providing the option of a distraction-free work space with wonderful amenities. During these trying times, we have ensured that our desks are space out to allow for social distancing to follow the current COVID-19 guidelines and to also ensure the safety of all of our customers and staff! We are located downtown in the heart of the city. Some of the amenities that our members can enjoy include: coffee, snacks, printing, parking, conference rooms, high-speed internet, and furnished office spaces. </p></article>
+  </div>
+  <div class="footer">
+    <section><img src="images/ccfull.png" width="75" alt=""/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHELBY SMITH | MY COWORKING SITE | Copyright &copy;2020</section>
+  </div>
+</div>
+</body>
+</html>

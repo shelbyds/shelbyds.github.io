@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+html, body, .grid-container {
+    height: 100%;
+    margin: 0;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr 4fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header header" "hero hero hero" "left center right" "footer footer footer";
+}
+.header {
+    grid-area: header;
+    background-color: #024959;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.hero {
+    grid-area: hero;
+    background-image: url(images/office1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.footer {
+    grid-area: footer;
+    background-color: #024959;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.left {
+    grid-area: left;
+    text-align: center;
+}
+.center {
+    grid-area: center;
+    text-align: center;
+}
+.right {
+    grid-area: right;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="header">
+    <nav> <a href="index.html">HOME </a>|<a href="whatweoffer.html"> WHAT WE OFFER </a>|<a href="info.html"> INFO </a>|<a href="aboutus.html"> ABOUT </a>|<a href="contactus.html"> CONTACT</a> </nav>
+  </div>
+  <div class="hero">
+    <div class="logo"></div>
+  </div>
+  <div class="left">
+  <section>
+    <h2>A DESK FOR YOU</h2>
+    • Your Own Personal Desk.<br>
+    • Rent a Conference Room.<br>
+    • High Speed Internet.<br>
+    • Coffee and Snacks.<br>
+    • Mailbox included.<br>
+    • Printing Available.<br>
+    • Parking.
+    </div>
+  </section>
+  <div class="center">
+  <section>
+    <h2>COWORKING</h2>
+    • Your Own Personal Desk.<br>
+    • Rent a Conference Room.<br>
+    • High Speed Internet.<br>
+    • Printing available<br>
+    • Coffee and Snacks.<br>
+    • 24/7 access.
+    </div>
+  </section>
+  <div class="right">
+  <section>
+    <h2>DAY PASS</h2>
+    • Rent a Conference Room.<br>
+    • Mon-Fri Availability.<br>
+    • High Speed Internet.<br>
+    • Printing available.<br>
+    • Coffee and Snacks.
+    </div>
+  </section>
+  <div class="footer">
+    <section><img src="images/ccfull.png" width="75" alt=""/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHELBY SMITH | MY COWORKING SITE | Copyright &copy;2020</section>
+  </div>
+</div>
+</body>
+</html>
